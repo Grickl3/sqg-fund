@@ -1,0 +1,105 @@
+
+
+.milestone {
+	margin: 15px;
+	padding: 15px;
+	border-radius: 7px;
+}
+
+@media(min-width: 1080px) {
+	.milestone {
+	}
+}
+
+.milestone__achieved {
+	border: 2px solid green;
+	color: green;
+}
+
+@media(min-width: 1080px) {
+	.milestone__achieved {
+	}
+}
+
+.milestone__not-achieved {
+	opacity: .5;
+	border: 2px solid lightgrey;
+}
+
+@media(min-width: 1080px) {
+	.milestone__not-achieved {
+	}
+}
+
+.milestone__title {
+	font-weight: 700;
+	font-size: 2.75rem; 
+}
+
+@media(min-width: 1080px) {
+	.milestone__title {
+		font-weight: 700;
+		font-size: 1rem;
+	}
+}
+
+.milestone__copy {
+	display: inline-block;
+	margin-top: 8px;
+	font-weight: 300;
+	font-size: 2rem;
+	line-height: 2.25rem;
+}
+
+@media(min-width: 1080px) {
+	.milestone__copy {
+		font-weight: 700;
+		font-size: .8rem;
+		line-height: 1.1rem;
+	}
+}
+
+.milestone__achievement-status {
+	display: inline-block;
+	margin-top: 8px;
+	font-size: 2rem;
+	font-weight: 900;
+}
+
+@media(min-width: 1080px) {
+	.milestone__achievement-status {
+		display: inline-block;
+		margin-top: 8px;
+		font-size: .8rem;
+		font-weight: 900;
+	}
+}
+
+.milestone__achievement-date {
+	font-size: 2rem;
+}
+
+@media(min-width: 1080px) {
+	.milestone__achievement-date {
+		font-size: .8rem;
+	}
+}
+
+.milestone__TBA-box {
+	margin: 15px;
+	text-align: center;
+}
+
+.milestone__TBA {
+	color: grey;
+	font-size: 2rem;
+}
+
+@media(min-width: 1080px) {
+	.milestone__TBA {
+		font-size: .8rem;
+	}
+}
+
+
+

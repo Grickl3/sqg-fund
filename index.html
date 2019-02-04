@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/brand.css">
 	<link rel="stylesheet" type="text/css" href="styles/prose.css">
 	<link rel="stylesheet" type="text/css" href="styles/image.css">
+	<link rel="stylesheet" type="text/css" href="styles/milestone.css">
 	<link rel="stylesheet" type="text/css" href="styles/layout.css">
 	<link rel="stylesheet" type="text/css" href="styles/ui.css">
 </head>
@@ -18,19 +19,18 @@
 	</div><!-- HEADER --> 
 
 	<div class="layout__top-box">
-		<div class="layout__video-box">
-			<div>
-				<!-- <video class="layout__campaign-video" width="360" height="" controls>
-	  				<source src="video_pmr.3gp" type="video/3gp"> 
-				</video> --> 
+		<div class="layout__video-box"> 
+			<div class="layout__campaign-video">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/KGJTZ_vemdw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div><!-- CAMPAIGN VIDEO --> 
+			<div class="layout__video-button__box">
 				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 				<input type="hidden" name="cmd" value="_s-xclick" />
 				<input type="hidden" name="hosted_button_id" value="M4KG627E6S5D4" />
 				<input class="layout__donate-button-pp" type="image" src="http://sqglz.ink/sqg-fund/img/donate-button.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
 				<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
 				</form>
+			</div><!-- VIDEO BUTTON BOX -->
 
 			<!-- <div class="layout__donate-button">
 				<h1 class="layout__donate-copy">donate</h1>
@@ -38,12 +38,31 @@
 		</div><!-- VIDEO BOX -->
 
 		<div class="layout__campaign-stats">
-			<h2>Imagine Campaign Stats Here</h2> 
+			<div class="milestone milestone__achieved">
+				<span class="milestone__title">Build Prototype</span><br>
+				<span class="milestone__copy">Produce a single page crowd funding campaign with everything it needs and nothing it doesn't.</span><br>
+				<span class="milestone__achievement-status">ACHIEVED</span><br>
+				<span class="milestone__achievement-date">February 3, 2019</span>
+			</div><!-- MILESTONE --> 
+			<div class="milestone milestone__not-achieved">
+				<span class="milestone__title">24 Portraits</span><br>
+				<span class="milestone__copy">Receive requests and turn them around; get that inspiration moving!</span><br>
+				<span class="milestone__achievement-status">not yet achieved</span><br>
+				<span class="milestone__achievement-date">target date: 2/24/2019</span>
+			</div><!-- MILESTONE -->
+			<div class="milestone milestone__not-achieved">
+				<span class="milestone__title">Build Contribution Total Display</span><br>
+				<span class="milestone__copy">Display live updated running total of contributions.</span><br>
+				<span class="milestone__achievement-status">not yet achieved</span><br>
+				<span class="milestone__achievement-date">target date: 3/3/2019</span>
+			</div><!-- MILESTONE -->
+			<div class="milestone__TBA-box"><span class="milestone__TBA">More to Come!</span></div>
 		</div><!-- CAMPAIGN STATS -->
 	</div><!-- TOP BOX -->
+
 	<div class="layout__second-box">  
 		<div class="prose__claim-box"> 
-			 <h3 class="prose__intro">There&nbsp;are&nbsp;three&nbsp;distinct&nbsp;and highly&nbsp;interrelated&nbsp;outcomes that&nbsp;this&nbsp;campaign&nbsp;is&nbsp;going&nbsp;for:</h3>
+			 <h3 class="prose__intro">There&nbsp;are&nbsp;three&nbsp;distinct&nbsp;and highly&nbsp;interrelated&nbsp;outcomes that&nbsp;this&nbsp;campaign is&nbsp;going&nbsp;for:</h3>
 
 			 <h2 class="prose__claim">Create a crowdfunding option based in flexibility.</h2>
 			 <p class="prose__explication">Make it free from any irrelevant political or prescriptive excess, one which allows campaign designers to organize dynamic combinations of community resources including money, time, materials, and ideas.<br>And, make it free.</p>
@@ -56,7 +75,7 @@
 		</div><!-- CLAIM BOX -->
 
 		<div class="image__box">
-			<h2 class="image__header">For this stage of the prototype I'm just gonna set these images here as examples of portraiture work in a range of production values.</h2> 
+			<h2 class="image__header">For this stage of the prototype, I'm just gonna set these images here as examples of portraiture work in a range of production values.</h2> 
 
 			<img src="img/emily.jpg" alt="female toddler portraite detail" nopin="nopin">
 
@@ -69,7 +88,7 @@
 		</div><!-- IMAGE BOX -->
 
 		<div class="layout__small-space">
-	 		<p>And yes, I'm comfortable with that ridiculous face I'm making at the beginning of the video, well, as comfortable as I ever am with video.</p>
+	 		<img class="layout__footer__logo" src="http://sqglz.com/assets/img/sqglz.svg" alt="SQGLZ logo" nopin="nopin">
 		</div><!-- SMALL SPACE -->
 	</div><!-- SECOND BOX -->
 
