@@ -1,3 +1,49 @@
 
 
 
+.nav {
+	position: fixed;
+	z-index: 9;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 50px;
+	padding-top: 10px;
+
+	background-color: darkslategrey;
+	color: white;
+	font-weight: 300;
+}
+
+.nav__home {
+	margin: 0 10px;
+	height: 40px;
+}
+
+.nav__link {
+	margin: 0 40px;
+	letter-spacing: .1rem;
+}
+
+.nav__link:hover {
+	color: #adc405;
+}
+
+.nav__left {
+	float: left;
+}
+
+.nav__campaign {
+	margin-top: 10px;
+}
+
+.nav__right {
+	float: right;
+	padding: 10px 0;
+}
+
+.nav__spacer {
+	display: inline-block;
+	width: 50px;
+	height: 10px;
+}
