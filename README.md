@@ -1,2 +1,18 @@
-# sqg-fund
-community resource organization tool
+# Slow Spread Sink  
+
+TLDR: This whole repository is essentially a prototype. In the near future there will be a separate repo which will be a React based application. That will be the production build. This repo will persist. It will contain all of the design specs and conceptual documentation. Why? Well, okay, don't tell anybody, but Deacon isn't really a full-stack web-developer. Actually, Deacon's title in the business is Design Strategist, so writing the really good code isn't really his job. Speaking in the third person and specifying the hell out of some projects. That's Deacon's job. That, and writing in the third person.
+
+##Project Goal  
+Explore the possibilities of non-Capitalistic, non-Socialistic, provisioning for instantiating projects and operations infusions. More to come …
+
+##Basic Outline  
+Start with a crowdfunding system …
+
+##Things the Crowdfunding System Will Do  
+Raising money …
+
+Sourcing in-kind contributions …
+
+Soliciting labor …
+
+Requests for donated IP …
