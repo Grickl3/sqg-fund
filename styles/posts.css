@@ -16,6 +16,9 @@
 
 	border-radius: 7px;
 	border: 3px solid lightslategrey;
+	background-color: white;
+
+	transition: height .3s;
 }
 
 .post__top-line {
