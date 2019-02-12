@@ -29,6 +29,10 @@
 	color: #adc405;
 }
 
+.nav__active {
+	text-decoration: underline #adc405;
+}
+
 .nav__left {
 	float: left;
 }

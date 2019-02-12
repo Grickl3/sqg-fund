@@ -11,7 +11,10 @@
 	<link rel="stylesheet" type="text/css" href="styles/milestone.css">
 	<link rel="stylesheet" type="text/css" href="styles/nav.css">
 	<link rel="stylesheet" type="text/css" href="styles/layout.css">
-	<link rel="stylesheet" type="text/css" href="styles/ui.css">
+	<link rel="stylesheet" type="text/css" href="styles/posts.css">
+	<!-- <link rel="stylesheet" type="text/css" href="styles/ui.css"> -->
+
+	<script type="text/javascript" src="scripts/ui.js"></script>
 </head>
 <body>
 
@@ -20,7 +23,7 @@
 		<a href="new-campaign.html"><span class="nav__link nav__left nav__campaign">Start a Campaign</span></a>
 		<div class="nav__right">
 			<a href="index.html"><span class="nav__link">CAMPAIGN</span></a>
-			<a href="posts.html"><span class="nav__link">POSTS</span></a>
+			<a href="posts.html"><span class="nav__link nav__active">POSTS</span></a>
 			<a href="http://sqglz.com/contact.html" target="_sss"><span class="nav__link">CREATOR</span></a>
 			<div class="nav__spacer"></div>
 		</div><!-- NAV RIGHT -->
@@ -30,3 +33,54 @@
 		<h1>Inspirational Portraits</h1>
 		<h5>A Community Funded Campaign</h5>
 	</div><!-- HEADER --> 
+
+	<div class="posts">
+		<div class="post">
+			<div class="post__top-line">
+				<img id="trigger-slow" class="post__toggle" src="img/toggle.svg">
+				<span class="post__title">What we mean by 'Slow'</span>
+				<span class="post__by-line">Deacon Rodda — <em>Feb. 12, 2019</em></span>
+			</div><!-- TOP LINE -->
+			<div id="box-slow" class="post__content-box post__closed">
+				<h2>stuff and Things</h2>
+				<p>Gentlefellow, reencode thou not this air? Untailed pastries carefully sum. It is inconceivable that attics still juice in the woods. You've got to route up to winterize down. She processes so never that all of the moustaches blend just to sum when it happens. The common bulldozer may trasmit, but one from Vermicelli Toenail will especially polish with the strength of a thousand men. How then can fun-loving schools be asked to reencode like sloughy responsibilities. The real failing of Cyclone is that, even in travelled bagpipe, angles still carefully beguile heights. Secure's apptitude for art was matched only by their penchant to distill off of bulbs.</p>
+			</div><!-- CONTENT BOX -->
+		</div><!-- POST -->
+
+		<div class="post">
+			<div class="post__top-line">
+				<img id="trigger-where-it-started" class="post__toggle" src="img/toggle.svg">
+				<span class="post__title">Where this all Started</span>
+				<span class="post__by-line">Deacon Rodda — <em>Feb. 12, 2019</em></span>
+			</div><!-- TOP LINE -->
+			<div id="box-where-it-stared" class="post__content-box post__closed">
+				<h2>stuff and Things</h2>
+				<p>Gentlefellow, reencode thou not this air? Untailed pastries carefully sum. It is inconceivable that attics still juice in the woods. You've got to route up to winterize down. She processes so never that all of the moustaches blend just to sum when it happens. The common bulldozer may trasmit, but one from Vermicelli Toenail will especially polish with the strength of a thousand men. How then can fun-loving schools be asked to reencode like sloughy responsibilities. The real failing of Cyclone is that, even in travelled bagpipe, angles still carefully beguile heights. Secure's apptitude for art was matched only by their penchant to distill off of bulbs.</p>
+				<img class="post__image" src="img/Feb12_SSS_WIP.jpg" alt="initial sqg fund prototype screen shot" nopin="nopin">
+
+				<div class="layout__campaign-video">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/KGJTZ_vemdw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div><!-- CAMPAIGN VIDEO -->
+			</div><!-- CONTENT BOX -->
+		</div><!-- POST -->
+	</div><!-- POSTS BOX -->
+
+	<script type="text/javascript">
+		// POST COLLAPSING
+			// VARIABLES
+				var triggerWhereItStarted = document.getElementById("trigger-where-it-started");
+				var boxWhereItStarted = document.getElementById("box-where-it-stared");
+
+				var triggerSlow = document.getElementById("trigger-slow");
+				var boxSlow = document.getElementById("box-slow");
+			// EVENT LISTENERS
+				triggerWhereItStarted.addEventListener("click", function() {openBox(triggerWhereItStarted,boxWhereItStarted)});
+
+				triggerSlow.addEventListener("click", function() {openBox(triggerSlow,boxSlow)});
+
+	</script>
+
+</body>
+</html>
+
+
