@@ -47,6 +47,14 @@ p a:hover {
 	color: #adc405;
 }
 
+h3 a {
+	color: #7b8403;
+}
+
+h3 a:hover {
+	color: #adc405;
+}
+
 @media (min-width: 1080px) {
 	h1 {
 		font-size: 3rem;
