@@ -2,9 +2,15 @@
 
 
 .layout__header {
-	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	margin: 0 4rem 0 4rem;
 	margin-top: 100px;
 }
+
+.layout__header__title {}
 
 .layout__top-box {
 	display: flex;
@@ -15,8 +21,8 @@
 .layout__video-box {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	padding: 0 35px;
+	align-items: left;
+	padding: 0 0 0 4rem;
 	flex-grow: 10;
 }
 
@@ -27,23 +33,23 @@
 }
 
 .layout__campaign-video {
-	border-top-right-radius: 7px;
-	border-top-left-radius: 7px;
-	border-bottom-right-radius: 9px;
-	border-bottom-left-radius: 9px;
+	/*border-top-right-radius: 7px;*/
+	/*border-top-left-radius: 7px;*/
+	/*border-bottom-right-radius: 9px;*/
+	/*border-bottom-left-radius: 9px;*/
 	overflow: hidden;
 }
 
 .layout__video-button__box {
 	display: flex;
-	justify-content: center;
-	padding: 1rem 0;
-	margin: 5rem;
+	justify-content: left;
+	padding: 0;
+	margin: 0;
 }
 
 @media (min-width: 1080px) {
 	.layout__video-button__box {
-		margin: 2rem;
+		margin: 2rem 0;
 	}
 }
 

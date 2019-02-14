@@ -1,0 +1,83 @@
+
+
+
+
+.mailchimp-box {
+	margin: 32px 0 0 0;
+	padding: 15px;
+	height: 45px;
+	cursor: pointer;
+
+	border-radius: 7px;
+	background-color: #7b8403;
+}
+
+.mailchimp__call-to-action {
+	cursor: pointer;
+	font-size: 2rem;
+	color: white;
+}
+
+.mailchimp__modal {
+	z-index: 9;
+}
+
+.mailchimp__little-space {
+	height: 40px;
+	width: 20px;
+}
+
+.mailchimp__modal__hidden {
+	display: none;
+}
+
+.mailchimp__modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+
+	background-color: black;
+	opacity: .7;
+}
+
+.mailchimp__form-box {
+	position: fixed;
+	top: 200px;
+	bottom: auto;
+	left: 50%;
+	transform: translateX(-50%);
+
+	padding: 20px;
+	height: 600px;
+	width: 450px;
+
+	border-radius: 7px;
+	background-color: white;	
+}
+
+.mailchimp__modal__close-x {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+
+	height: 30px;
+	width: 30px;
+
+	border-radius: 15px;
+	background-color: slategrey;
+}
+
+.mailchimp__modal__close-x:hover {
+	cursor: pointer;
+	background-color: #822b04;
+}
+
+
+
+
+
+
