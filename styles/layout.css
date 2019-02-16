@@ -10,12 +10,19 @@
 	margin-top: 100px;
 }
 
-.layout__header__title {}
+.layout__header__title-box {
+	max-width: 60%;
+
+	/*border: 1px solid red;*/
+}
 
 .layout__top-box {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+
+	/*border: 1px solid red;*/
+
 }
 
 .layout__video-box {
@@ -24,6 +31,9 @@
 	align-items: left;
 	padding: 0 0 0 4rem;
 	flex-grow: 10;
+
+	/*border: 1px solid red;*/
+
 }
 
 @media (min-width: 750px) {

@@ -3,13 +3,17 @@
 
 
 .mailchimp-box {
-	margin: 32px 0 0 0;
+	margin: 5rem 0 0 0;
 	padding: 15px;
-	height: 45px;
+	height: 40px;
 	cursor: pointer;
 
 	border-radius: 7px;
 	background-color: #7b8403;
+}
+
+.mailchimp-box:hover {
+	background-color: darkslategrey;
 }
 
 .mailchimp__call-to-action {
@@ -19,7 +23,7 @@
 }
 
 .mailchimp__modal {
-	z-index: 9;
+	opacity: 1;
 }
 
 .mailchimp__little-space {
@@ -37,8 +41,8 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	height: 100vh;
-	width: 100vw;
+	height: 100%;
+	width: 100%;
 
 	background-color: black;
 	opacity: .7;
@@ -46,17 +50,28 @@
 
 .mailchimp__form-box {
 	position: fixed;
-	top: 200px;
-	bottom: auto;
+	top: 12%;
+	bottom: 5%;
 	left: 50%;
 	transform: translateX(-50%);
 
 	padding: 20px;
-	height: 600px;
-	width: 450px;
+	max-height: 55%;
+	width: 80%;
 
 	border-radius: 7px;
-	background-color: white;	
+	background-color: white;
+	opacity: 1;
+
+	overflow-y: scroll;
+}
+
+@media (min-width: 980px) {
+	.mailchimp__form-box {
+		max-height: 83%;
+		width: 600px;
+	}
+
 }
 
 .mailchimp__modal__close-x {
@@ -76,6 +91,83 @@
 	background-color: #822b04;
 }
 
+.mailchimp__title {
+	font-size: 2.8rem;
+}
+
+.asterisk {
+	font-size: 1.7rem;
+	color: #822b04;
+}
+
+.indicates-required {
+	margin: 0 .5rem;
+}
+
+.mailchimp__required-blurb {
+	font-size: 1.7rem;
+}
+
+.mc-field-group input {
+	height: 3rem;
+	width: 70%;
+	margin: .5rem;
+	padding: 9px;
+
+	font-size: 1.7rem;
+	border-radius: 7px;
+}
+
+.mc-field-group input:focus {
+	outline: none;
+}
+
+.button {
+	margin: 2rem .5rem;
+	height: 3rem;
+	width: 12rem;
+
+	font-size: 1.8rem;
+	color: white;
+	background-color: grey;
+}
+
+.button:hover {
+	background-color: darkslategrey;
+}
+
+@media (min-width: 980px) {
+	.mailchimp__title {
+		font-size: 1.8rem;
+	}
+
+	.mailchimp__required-blurb {
+		font-size: 1.2rem;
+	}
+
+	.mc-field-group input {
+		height: 2.5rem;
+		margin: .5rem;
+		padding: 9px;
+
+		font-size: 1.3rem;
+		border-radius: 7px;
+	}
+
+	
+}
+
+.mailchimp__assurance {
+	font-size: 2rem;
+	line-height: 2.5rem;
+}
+
+@media (min-width: 980px) {
+	.mailchimp__assurance {
+		font-size: 1.2rem;
+		line-height: 1.8rem;
+	}
+}
 
 
 
