@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
 	<title>Inspirational Portraits</title>
@@ -18,16 +18,37 @@
 </head>
 <body>
 
-	<div class="nav">
-		<a href="http://slowspreadsink.org/" target="_sss"><img class="nav__home nav__left" src="img/sss-mark.svg" alt="slow spread sink logo mark"></a>
-		<a href="new-campaign.html"><span class="nav__link nav__left nav__campaign">Start a Campaign</span></a>
-		<div class="nav__right">
-			<a href="index.html"><span class="nav__link nav__active">CAMPAIGN</span></a>
-			<a href="posts.html"><span class="nav__link">POSTS</span></a>
-			<a href="http://sqglz.com/contact.html" target="_sss"><span class="nav__link">CREATOR</span></a>
-			<div class="nav__spacer"></div>
-		</div><!-- NAV RIGHT -->
-	</div><!-- NAV -->
+	<!-- NAVS -->
+		<div id="backdrop" class="nav__mobile__backdrop nav__hidden"></div>
+		<div id="dropdown" class="nav__mobile__dropdown nav__hidden"> 
+				<a href="index.html"><span class="nav__mobile__link">CAMPAIGN</span></a>
+				<a href="posts.html"><span class="nav__mobile__link">POSTS</span></a>
+				<a href="http://sqglz.com/contact.html" target="_sss"><span class="nav__mobile__link">CREATOR</span></a>
+				<hr class="nav__mobile__hr">
+				<a href="new-campaign.html"><span class="nav__mobile__link">Start a Campaign</span></a>
+			</div><!-- NAV MOBILE DROPDOWN -->
+
+		<div class="nav__mobile">
+			<a href="http://slowspreadsink.org/" target="_sss"><img class="nav__home__mobile" src="img/sss-mark.svg" alt="slow spread sink logo mark"></a>
+
+			<div id="mobile-nav-open" class="nav__mobile__elipsis">
+				<div class="elipsis-dot elipsis-left"> </div>
+				<div class="elipsis-dot elipsis-middle"></div>  
+				<div class="elipsis-dot elipsis-right"></div>
+			</div><!-- ELIPSIS -->
+		</div><!-- NAV MOBILE -->
+
+		<div class="nav__desktop">
+			<a href="http://slowspreadsink.org/" target="_sss"><img class="nav__home nav__left" src="img/sss-mark.svg" alt="slow spread sink logo mark"></a>
+			<a href="new-campaign.html"><span class="nav__link nav__left nav__campaign">Start a Campaign</span></a>
+			<div class="nav__right">
+				<a href="index.html"><span class="nav__link nav__active">CAMPAIGN</span></a>
+				<a href="posts.html"><span class="nav__link">POSTS</span></a>
+				<a href="http://sqglz.com/contact.html" target="_sss"><span class="nav__link">CREATOR</span></a>
+				<div class="nav__spacer"></div>
+			</div><!-- NAV RIGHT -->
+		</div><!-- NAV DESKTOP -->
+	<!-- NAVS -->
 
 	<div class="layout__header">
 		<div class="layout__header__title-box">
@@ -175,6 +196,21 @@
 					mailChimpModal.classList.add("mailchimp__modal__hidden");
 			});
 
+		// MOBILE NAV
+			var mobileOpen = document.getElementById("mobile-nav-open");
+			var backdrop = document.getElementById("backdrop");
+			var dropdown = document.getElementById("dropdown")
+
+			mobileOpen.addEventListener("click", function() {
+					backdrop.classList.toggle("nav__hidden");
+					dropdown.classList.toggle("nav__hidden");
+			});
+
+			backdrop.addEventListener("click", function() {
+					backdrop.classList.add("nav__hidden");
+					dropdown.classList.add("nav__hidden");
+			}); 
+ 
 	</script>
 
 </body>
