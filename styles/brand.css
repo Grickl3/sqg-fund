@@ -5,6 +5,10 @@
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 h1,h2,h3,h4,h5,h6,p,span {
 	max-width: 90%;
 }
@@ -28,7 +32,7 @@ h3 {
 h5 {
 	max-width: 700px;
 	font-size: 1.75rem;
-	margin-top: -1.5rem;
+	margin: -1rem 0 1rem 0;
 	font-weight: 300;
 }
 
@@ -61,6 +65,11 @@ h3 a:hover {
 }
 
 @media (min-width: 1080px) {
+
+	h1,h2,h3,h4,h5,h6,p,span {
+		max-width: 750px;
+	}
+
 	h1 {
 		font-size: 3rem;
 	}
@@ -77,7 +86,7 @@ h3 a:hover {
 
 	h5 {
 		font-size: 1.5rem;
-		margin-top: -30px;
+		margin: -1rem 0 1rem 0;
 	}
 
 	p,li {

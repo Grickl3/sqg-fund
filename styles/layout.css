@@ -24,6 +24,7 @@
 
 .layout__header__title-box {
 	margin-left: .5rem;
+
 	/*border: 1px solid red;*/
 }
 
@@ -31,19 +32,20 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: space-between;
 
 	/*border: 1px solid purple;*/
-
 }
 
 .layout__video-box {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/*flex-grow: 10;*/
-	max-width: 100%
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 
-	/*border: 10px solid green;*/
+	/*border: 1px solid green;*/
 
 }
 
@@ -52,38 +54,41 @@
 		display: flex;
 		flex-direction: column;
 		align-items: left;
+		margin-left: 0;
+		margin-right: 0;
 		padding: 0 0 0 4rem;
-		flex-grow: 10;
-		max-width: 100%
+		max-width: 100%;
 
 		/*border: 1px solid red;*/
-
 	}
 }
 
-.layout__campaign-video {
-	display: flex;
-	justify-content: center;
-}
+.video-mobile {
+		display: block;
+	}
 
-.layout__campaign-video-box {
-		display: flex;
-		justify-content: center;
+	.video-desktop {
+		display: none;
 	}
 
 @media (min-width: 1080px) {
-	.layout__campaign-video-box {
-		display: flex;
-		justify-content: left;
+
+	.video-mobile {
+		display: none;
 	}
+
+	.video-desktop {
+		display: inline-block;
+	}
+
 }
 
-.layout__video-button__box {
+/*.layout__video-button__box {
 	display: flex;
 	justify-content: left;
 	padding: 0;
 	margin: 0.5rem 0;
-}
+}*/
 
 @media (min-width: 1080px) {
 	.layout__video-button__box {
@@ -92,9 +97,7 @@
 }
 
 .layout__donate-button {
-	padding: .1rem 0;
-	/*height: 5rem;*/
-	/*width: 100%;*/
+	padding: 1rem 0;
 
 	border-radius: 7px;
 	transition: background-color .3s;
@@ -106,7 +109,9 @@
 	transition: background-color .3s;
 	background-color: green;
 }
+
 .layout__donate-button-pp {
+	margin-top: 2rem;
 	opacity: .5;
 }
 
@@ -121,7 +126,7 @@
 }
 
 .layout__campaign-stats {
-	margin: 0 2rem;
+	margin: 2rem .5rem;
 	/*padding: 32px;*/
 	flex-grow: 4;
 	/*max-width: 20vw;*/
@@ -133,7 +138,6 @@
 @media(min-width: 1080px) {
 	.layout__campaign-stats {
 		margin: 0 4rem;
-		/*padding: 32px;*/
 		flex-grow: 4;
 		max-width: 20vw;
 
@@ -143,7 +147,13 @@
 }
 
 .layout__second-box {
-	margin-top: 5rem;
+	margin: 2rem 10px;
+}
+
+@media(min-width: 1080px) {
+	.layout__second-box {
+		margin: -10rem 0 0 4rem;
+	}
 }
 
 .layout__img-fit {
@@ -162,13 +172,12 @@
 	margin-bottom: 450px;
 	margin-left: auto;
 	margin-right: auto;
-	height: 200px;
+	height: 75px;
 }
 
 @media(min-width: 1080px) {
 	.layout__footer__logo {
-		margin-top: 100px;
-		height: 60px;
+		margin-top: 400px;
 	}
 }
 
