@@ -49,8 +49,10 @@
 	<!-- NAVS -->
 
 	<div class="layout__header">
-		<h1>Start a Campaign</h1>
-		<h5>Be a part of the experiment to surpass the dreams<br>of both Capitalism and Socialism</h5>
+		<div class="header__title-box">
+			<h1>Start a Campaign</h1>
+			<h5>Be a part of the experiment to surpass the dreams of both Capitalism and Socialism</h5>
+		</div><!-- TITLE BOX -->
 	</div><!-- HEADER --> 
 
 	<div class="new-campaign__main">
@@ -66,4 +68,25 @@
 		</p>
 	</div><!-- NEW CAMPAIGN MAIN -->
 
-	
+	<script type="text/javascript">
+		
+		// MOBILE NAV
+			var mobileOpen = document.getElementById("mobile-nav-open");
+			var backdrop = document.getElementById("backdrop");
+			var dropdown = document.getElementById("dropdown")
+
+			mobileOpen.addEventListener("click", function() {
+					backdrop.classList.toggle("nav__hidden");
+					dropdown.classList.toggle("nav__hidden");
+			});
+
+			backdrop.addEventListener("click", function() {
+					backdrop.classList.add("nav__hidden");
+					dropdown.classList.add("nav__hidden");
+			}); 
+
+
+	</script>
+
+</body>
+</html>	

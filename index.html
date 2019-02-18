@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="styles/brand.css">
-	<link rel="stylesheet" type="text/css" href="styles/prose.css">
+	<!-- <link rel="stylesheet" type="text/css" href="styles/prose.css"> --> 
 	<link rel="stylesheet" type="text/css" href="styles/mailchimp.css">
 	<link rel="stylesheet" type="text/css" href="styles/image.css">
 	<link rel="stylesheet" type="text/css" href="styles/milestone.css">
@@ -54,16 +54,13 @@
 		<div class="layout__header__title-box">
 			<h1 class="layout__header__title">Slow Spread Sink</h1>
 			<h5>A Crowdsourcing System — Building Itself<em>Right Now — Before Your Very Eyes</em></h5>
-		</div>
-		<div id="mailchimp-trigger" class="mailchimp-box">
-			<span class="mailchimp__call-to-action">FOLLOW</span>
-		</div><!-- MAILCHIMP TRIGGER -->
+		</div><!-- TITLE BOX -->    
 	</div><!-- HEADER --> 
 
-	<div class="layout__top-box">
+	<div class="layout__top-box"> 
 		<div class="layout__video-box"> 
-			<div class="layout__campaign-video">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/KGJTZ_vemdw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="layout__campaign-video-campaign-page">
+				<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/KGJTZ_vemdw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div><!-- CAMPAIGN VIDEO --> 
 			<div class="layout__video-button__box">
 				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -77,9 +74,14 @@
 			<!-- <div class="layout__donate-button">
 				<h1 class="layout__donate-copy">donate</h1>
 			</div> --><!-- DONATE BUTTON -->
-		</div><!-- VIDEO BOX -->
+		</div><!-- VIDEO BOX --> 
+	</div><!-- TOP BOX -->
 
 		<div class="layout__campaign-stats">
+			<div id="mailchimp-trigger" class="mailchimp-box">
+				<span class="mailchimp__call-to-action">FOLLOW</span>
+			</div><!-- MAILCHIMP TRIGGER -->  
+
 			<div class="milestone milestone__achieved">
 				<span class="milestone__title">Build Prototype</span><br>
 				<span class="milestone__copy">Produce a single page crowd funding campaign with everything it needs and nothing it doesn't.</span><br>
@@ -100,7 +102,6 @@
 			</div><!-- MILESTONE -->
 			<div class="milestone__TBA-box"><span class="milestone__TBA">More to Come!</span></div>
 		</div><!-- CAMPAIGN STATS -->
-	</div><!-- TOP BOX -->
 
 	<div class="layout__second-box">  
 		<div class="prose__claim-box"> 
@@ -119,13 +120,13 @@
 		<div class="image__box">
 			<h2 class="image__header">For this stage of the prototype, I'm just gonna set these images here as examples of portraiture work in a range of production values.</h2> 
 
-			<img src="img/emily.jpg" alt="female toddler portraite detail" nopin="nopin">
+			<img class="layout__img-fit" src="img/emily.jpg" alt="female toddler portraite detail" nopin="nopin">
 
-			<img src="img/ponderingHippie.jpg" alt="hippie scratches chin" nopin="nopin">
+			<img class="layout__img-fit" src="img/ponderingHippie.jpg" alt="hippie scratches chin" nopin="nopin">
 
-			<img src="img/vince.jpg" alt="Vincent Price gasps" nopin="nopin">
+			<img class="layout__img-fit" src="img/vince.jpg" alt="Vincent Price gasps" nopin="nopin">
 
-			<img src="img/dog.jpg" alt="dog waves a friendly wave" nopin="nopin">
+			<img class="layout__img-fit" src="img/dog.jpg" alt="dog waves a friendly wave" nopin="nopin">
 
 		</div><!-- IMAGE BOX -->
 
@@ -182,7 +183,7 @@
 		</div><!-- MAIL CHIMP FORM BOX -->  
 	</div><!-- MAILCHIMP MODAL -->  
 
-	<script type="text/javascript">
+	<script type="text/javascript"> 
 		// MAIL CHIMP
 			var mailchimpTrigger = document.getElementById("mailchimp-trigger");
 			var mailChimpClose = document.getElementById("mailchimp-close");
@@ -210,7 +211,8 @@
 					backdrop.classList.add("nav__hidden");
 					dropdown.classList.add("nav__hidden");
 			}); 
- 
+
+
 	</script>
 
 </body>

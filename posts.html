@@ -26,7 +26,7 @@
 				<a href="http://sqglz.com/contact.html" target="_sss"><span class="nav__mobile__link">CREATOR</span></a>
 				<hr class="nav__mobile__hr">
 				<a href="new-campaign.html"><span class="nav__mobile__link">Start a Campaign</span></a>
-			</div><!-- NAV MOBILE DROPDOWN -->
+			</div><!-- NAV MOBILE DROPDOWN --> 
 
 		<div class="nav__mobile">
 			<a href="http://slowspreadsink.org/" target="_sss"><img class="nav__home__mobile" src="img/sss-mark.svg" alt="slow spread sink logo mark"></a>
@@ -50,9 +50,11 @@
 		</div><!-- NAV DESKTOP -->
 	<!-- NAVS -->
 
-	<div class="layout__header">
-		<h1>Inspirational Portraits</h1>
-		<h5>A Community Funded Campaign</h5>
+	<div class="layout__header"> 
+		<div class="layout__header__title-box">
+			<h1>Inspirational Portraits</h1>
+			<h5>A Community Funded Campaign</h5>
+		</div><!-- TITLE BOX -->
 	</div><!-- HEADER --> 
 
 	<div class="posts">
@@ -66,7 +68,7 @@
 				<p>SQGLZ seeks to further dialog about how projects and operations get the initial investment they need and how those projects distribute the returns from any success experienced into various forms of capital and to appropriate stakeholders. </p>
 				<p>SQGLZ continues to have a strong interest in furthering more humane and benevolent systems of exchange. The lessons of the HaHo currency and COjacks projects have illuminated as many reasons to persist as errors in method. Capitalization and exchange, though, are best handled as separate financial concerns with differing economic implications.</p>
 				<p><em>This is all still just an outline.</em></p>
-				<span>Problems Inherent to Capitalism</span>
+				<p><strong>Problems Inherent to Capitalism</strong></p>
 				<ul>
 					<li>Funders are too greatly compensated for their role in realization.</li>
 					<li>Funders (<em>Venture Capitalists, Banks, etc.</em>) hold all significant control over what gets done in society.</li>
@@ -81,19 +83,19 @@
 					<li>Middle winners are frequently not being supported for solving a problem but for being liked.</li>
 					<li>Major platforms are highly prescriptive and are only differentiated based on fund provision mechanic.</li>
 				</ul>
-				<span>Concerning the Matter of Capitalization SQGLZ Postulates</span>
+				<p>Concerning the Matter of Capitalization SQGLZ Postulates</p>
 				<ul>
 					<li>Capitalization — its Operations, Policies, and Terms Determine any given Venture's Impact of all Forms of Capital</li>
 					<li>Without Appropriate Capitalization all Ventures Fail</li>
 				</ul>
-				<span>Elements of SQGLZ still forming vision for what resource provisioning could look like include:</span>
+				<p><strong>Elements of SQGLZ still forming vision for what resource provisioning could look like include:</strong></p>
 				<ul>
 					<li>SQGLZ believes that it is, itself, best positioned to play a direct role in restoring Intellectual, Cultural, and Spiritual Capital to the Commons, to Underserved Communities, and to Investors — each in proportion, as is appropriate to any given project.</li>
 					<li>SQGLZ believes that it is well suited to facilitate closely aligned firms in returning Natural, Material, Experiencial, and Financial Capital to the Commons, to Underserved Communities, and to Investors — each in proportion, as is appropriate to any given project.</li>
 					<li>SQGLZ believes that when forms of Capital other than Financial Capital are considered that nearly everyone can be an Investor.</li>
 					<li>SQGLZ has observed that many Investors are willing to contribute personal resources for well managed public return even when they themselves will have no direct benefit.</li>
 				</ul>
-				<span>Forms of Capital</span>
+				<p><strong>Forms of Capital</strong></p>
 				<ul>
 					<li>Natural</li>
 					<li>Material</li>
@@ -105,7 +107,7 @@
 					<li>Financial</li>
 				</ul>
 				<p>Currently, crowdfunding platforms seek to help people raise the only truly scarce resource in the economy — money. Time could be a close second but no matter how much of it you kill you're given another twenty-fours of it the next day. Helping people to raise money is obviously desirable to people because money is scarce; any assistance in gathering it is to be appreciated. This is what current crowdfunding systems get right. The obvious but entirely overlooked counterpart to this is that since money is the only truly scarce resource in the economy it could be a good deal easier to get people to part with other resources. Since, to supply any project or operation with the specific resources it needs, that money will have to be converted into other services and commodities, and those services and commodities are less scarce, could it not be more effective to raise them directly?</p>
-				<h3>Resources which could be Raised Using Slow Spread Sink:</h3>
+				<h4>Resources which could be Raised Using Slow Spread Sink:</h4>
 				<ul>
 					<li>USD and other Central Bank Currencies</li>
 					<li>BitCoin, Ethereum and other Cryptocurrencies</li>
@@ -144,7 +146,7 @@
 					</li>
 					<li>Space</li>
 				</ul>
-				<h3>To contribute to this conversation follow <a href="https://docs.google.com/document/d/1srOYIUr9g5ap3_kpxKLUuDPCEcut0XSSwaErv2vNnX8/edit?usp=sharing" target="_sss">this link</a>.</h3>
+				<p>To contribute to this conversation follow <a href="https://docs.google.com/document/d/1srOYIUr9g5ap3_kpxKLUuDPCEcut0XSSwaErv2vNnX8/edit?usp=sharing" target="_sss">this link</a>.</p>
 			</div><!-- CONTENT BOX -->
 		</div><!-- POST -->
 
@@ -179,6 +181,20 @@
 				triggerWhereItStarted.addEventListener("click", function() {openBox(triggerWhereItStarted,boxWhereItStarted)});
 
 				triggerSlow.addEventListener("click", function() {openBox(triggerSlow,boxSlow)});
+		// MOBILE NAV
+			var mobileOpen = document.getElementById("mobile-nav-open");
+			var backdrop = document.getElementById("backdrop");
+			var dropdown = document.getElementById("dropdown")
+
+			mobileOpen.addEventListener("click", function() {
+					backdrop.classList.toggle("nav__hidden");
+					dropdown.classList.toggle("nav__hidden");
+			});
+
+			backdrop.addEventListener("click", function() {
+					backdrop.classList.add("nav__hidden");
+					dropdown.classList.add("nav__hidden");
+			}); 
 
 	</script>
 
