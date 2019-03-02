@@ -3,5 +3,13 @@
 
 
 .new-campaign__main {
-	margin: 75px;
+	margin: 5px;
+}
+
+@media (min-width: 700px) {}
+
+@media (min-width: 1080px) {
+	.new-campaign__main {
+		margin: 75px;
+	}
 }

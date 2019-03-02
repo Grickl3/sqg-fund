@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
-	<title>Inspirational Portraits</title>
+	<title>Slow Spread Sink</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="styles/brand.css">
-	<link rel="stylesheet" type="text/css" href="styles/prose.css">
+	<!-- <link rel="stylesheet" type="text/css" href="styles/prose.css"> --> 
 	<link rel="stylesheet" type="text/css" href="styles/mailchimp.css">
 	<link rel="stylesheet" type="text/css" href="styles/image.css">
 	<link rel="stylesheet" type="text/css" href="styles/milestone.css">
@@ -18,81 +18,52 @@
 </head>
 <body>
 
-	<div class="nav">
-		<a href="http://slowspreadsink.org/" target="_sss"><img class="nav__home nav__left" src="img/sss-mark.svg" alt="slow spread sink logo mark"></a>
-		<a href="new-campaign.html"><span class="nav__link nav__left nav__campaign">Start a Campaign</span></a>
-		<div class="nav__right">
-			<a href="index.html"><span class="nav__link nav__active">CAMPAIGN</span></a>
-			<a href="posts.html"><span class="nav__link">POSTS</span></a>
-			<a href="http://sqglz.com/contact.html" target="_sss"><span class="nav__link">CREATOR</span></a>
-			<div class="nav__spacer"></div>
-		</div><!-- NAV RIGHT -->
-	</div><!-- NAV -->
+	<!-- NAVS -->
+		<div id="backdrop" class="nav__mobile__backdrop nav__hidden"></div>
+		<div id="dropdown" class="nav__mobile__dropdown nav__hidden"> 
+				<a href="index.html"><span class="nav__mobile__link">CAMPAIGN</span></a>
+				<a href="posts.html"><span class="nav__mobile__link">POSTS</span></a>
+				<a href="http://sqglz.com/contact.html" target="_sss"><span class="nav__mobile__link">CREATOR</span></a>
+				<hr class="nav__mobile__hr">
+				<a href="new-campaign.html"><span class="nav__mobile__link">Start a Campaign</span></a>
+			</div><!-- NAV MOBILE DROPDOWN -->
 
-	<div class="layout__header">
+		<div class="nav__mobile">
+			<a href="http://slowspreadsink.org/" target="_sss"><img class="nav__home__mobile" src="img/sss-mark.svg" alt="slow spread sink logo mark"></a>
+
+			<div id="mobile-nav-open" class="nav__mobile__elipsis">
+				<div class="elipsis-dot elipsis-left"> </div>
+				<div class="elipsis-dot elipsis-middle"></div>  
+				<div class="elipsis-dot elipsis-right"></div>
+			</div><!-- ELIPSIS -->
+		</div><!-- NAV MOBILE -->
+
+		<div class="nav__desktop">
+			<a href="http://slowspreadsink.org/" target="_sss"><img class="nav__home nav__left" src="img/sss-mark.svg" alt="slow spread sink logo mark"></a>
+			<a href="new-campaign.html"><span class="nav__link nav__left nav__campaign">Start a Campaign</span></a>
+			<div class="nav__right">
+				<a href="index.html"><span class="nav__link nav__active">CAMPAIGN</span></a>
+				<a href="posts.html"><span class="nav__link">POSTS</span></a>
+				<a href="http://sqglz.com/contact.html" target="_sss"><span class="nav__link">CREATOR</span></a>
+				<div class="nav__spacer"></div>
+			</div><!-- NAV RIGHT -->
+		</div><!-- NAV DESKTOP -->
+	<!-- NAVS -->
+
+	<div class="layout__header"> 
 		<div class="layout__header__title-box">
 			<h1 class="layout__header__title">Slow Spread Sink</h1>
-			<h5>A Crowdsourcing System — Building Itself<em>Right Now — Before Your Very Eyes</em></h5>
-		</div>
-		<div id="mailchimp-trigger" class="mailchimp-box">
-			<span class="mailchimp__call-to-action">FOLLOW</span>
-		</div><!-- MAILCHIMP TRIGGER -->
+			<h5>A Crowdsourcing System — Building Itself<br><em>Right Now — Before Your Very Eyes</em></h5>  
+		</div><!-- TITLE BOX -->    
 	</div><!-- HEADER --> 
 
-	<div id="mailchimp-modal" class="mailchimp__modal mailchimp__modal__hidden">
-		<div class="mailchimp__modal-backdrop"></div>
-		<div class="mailchimp__form-box">
-			<div id="mailchimp-close" class="mailchimp__modal__close-x"></div>
-			<div class="mailchimp__little-space"></div>
-			<!-- CODE FROM MAIL CHIMP -->
-				<!-- Begin Mailchimp Signup Form -->
-					<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-					<style type="text/css">
-						#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-						/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-						   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-					</style>
-					<div id="mc_embed_signup">
-					<form action="https://sqglz.us20.list-manage.com/subscribe/post?u=897d9386663f48a53e9af6c33&amp;id=5d6486c2d4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-					    <div id="mc_embed_signup_scroll">
-						<h2>Follow this campaign!</h2>
-					<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-					<div class="mc-field-group">
-						<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-					</label>
-						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-					</div>
-					<div class="mc-field-group">
-						<label for="mce-FNAME">First Name </label>
-						<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-					</div>
-					<div class="mc-field-group">
-						<label for="mce-LNAME">Last Name </label>
-						<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-					</div>
-						<div id="mce-responses" class="clear">
-							<div class="response" id="mce-error-response" style="display:none"></div>
-							<div class="response" id="mce-success-response" style="display:none"></div>
-						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-					    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_897d9386663f48a53e9af6c33_5d6486c2d4" tabindex="-1" value=""></div>
-					    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-					    </div>
-					</form>
-					</div>
-					<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-					<!--End mc_embed_signup-->
-			<!-- CODE FROM MAIL CHIMP -->
-
-			<p>We assure you that you will receive no more than one email a week — probably a good deal less. Also, we would love any and all feedback on the project. Write: <br><br> deacon@sqglz.com</p>
-		</div><!-- MAIL CHIMP FORM BOX -->
-	</div><!-- MAILCHIMP MODAL -->
-
-	<div class="layout__top-box">
-		<div class="layout__video-box"> 
-			<div class="layout__campaign-video">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/KGJTZ_vemdw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<div class="layout__top-box"> 
+		<div class="layout__video-box">  
+			<div class="">
+				<iframe class="video-mobile" width="330" height="315" src="https://www.youtube.com/embed/KGJTZ_vemdw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe class="video-desktop" width="560" height="315" src="https://www.youtube.com/embed/KGJTZ_vemdw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div><!-- CAMPAIGN VIDEO --> 
-			<div class="layout__video-button__box">
+			<div class="">
 				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 				<input type="hidden" name="cmd" value="_s-xclick" />
 				<input type="hidden" name="hosted_button_id" value="M4KG627E6S5D4" />
@@ -104,9 +75,13 @@
 			<!-- <div class="layout__donate-button">
 				<h1 class="layout__donate-copy">donate</h1>
 			</div> --><!-- DONATE BUTTON -->
-		</div><!-- VIDEO BOX -->
+		</div><!-- VIDEO BOX --> 
 
-		<div class="layout__campaign-stats">
+		<div class="layout__campaign-stats">   
+			<div id="mailchimp-trigger" class="mailchimp-box">
+				<span class="mailchimp__call-to-action">FOLLOW</span>
+			</div><!-- MAILCHIMP TRIGGER -->  
+
 			<div class="milestone milestone__achieved">
 				<span class="milestone__title">Build Prototype</span><br>
 				<span class="milestone__copy">Produce a single page crowd funding campaign with everything it needs and nothing it doesn't.</span><br>
@@ -129,9 +104,9 @@
 		</div><!-- CAMPAIGN STATS -->
 	</div><!-- TOP BOX -->
 
-	<div class="layout__second-box">  
-		<div class="prose__claim-box"> 
-			 <h3 class="prose__intro">There&nbsp;are&nbsp;three&nbsp;distinct&nbsp;and highly&nbsp;interrelated&nbsp;outcomes that&nbsp;this&nbsp;campaign is&nbsp;going&nbsp;for:</h3>
+	<div class="layout__second-box">
+		<div class="prose__claim-box">
+			 <h3 class="prose__intro">There are three distinct and highly interrelated outcomes that this campaign is going for:</h3>
 
 			 <h2 class="prose__claim">Create a crowdfunding option based in flexibility.</h2>
 			 <p class="prose__explication">Make it free from any irrelevant political or prescriptive excess, one which allows campaign designers to organize dynamic combinations of community resources including money, time, materials, and ideas.<br>And, make it free.</p>
@@ -146,13 +121,13 @@
 		<div class="image__box">
 			<h2 class="image__header">For this stage of the prototype, I'm just gonna set these images here as examples of portraiture work in a range of production values.</h2> 
 
-			<img src="img/emily.jpg" alt="female toddler portraite detail" nopin="nopin">
+			<img class="layout__img-fit" src="img/emily.jpg" alt="female toddler portraite detail" nopin="nopin">
 
-			<img src="img/ponderingHippie.jpg" alt="hippie scratches chin" nopin="nopin">
+			<img class="layout__img-fit" src="img/ponderingHippie.jpg" alt="hippie scratches chin" nopin="nopin">
 
-			<img src="img/vince.jpg" alt="Vincent Price gasps" nopin="nopin">
+			<img class="layout__img-fit" src="img/vince.jpg" alt="Vincent Price gasps" nopin="nopin">
 
-			<img src="img/dog.jpg" alt="dog waves a friendly wave" nopin="nopin">
+			<img class="layout__img-fit" src="img/dog.jpg" alt="dog waves a friendly wave" nopin="nopin">
 
 		</div><!-- IMAGE BOX -->
 
@@ -161,7 +136,55 @@
 		</div><!-- SMALL SPACE -->
 	</div><!-- SECOND BOX -->
 
-	<script type="text/javascript">
+	<div id="mailchimp-modal" class="mailchimp__modal mailchimp__modal__hidden"> 
+		<div class="mailchimp__modal-backdrop"></div>
+		<div class="mailchimp__form-box">
+			<div id="mailchimp-close" class="mailchimp__modal__close-x"></div>
+			<div class="mailchimp__little-space"></div>
+			<!-- CODE FROM MAIL CHIMP -->
+				<!-- Begin Mailchimp Signup Form -->
+					<!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> -->
+					<style type="text/css">
+						#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+						/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+						   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+					</style>
+					<div id="mc_embed_signup">
+					<form action="https://sqglz.us20.list-manage.com/subscribe/post?u=897d9386663f48a53e9af6c33&amp;id=5d6486c2d4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate> 
+					    <div id="mc_embed_signup_scroll">
+						<h2 class="mailchimp__title">Follow this campaign!</h2>
+					<div class="indicates-required"><span class="asterisk">*</span><span class="mailchimp__required-blurb"> indicates required</span></div>
+					<div class="mc-field-group">
+						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="email address">
+						<label for="mce-EMAIL"><span class="asterisk">*</span>
+					</label>
+					</div>
+					<div class="mc-field-group">
+						<label for="mce-FNAME"></label>
+						<input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="first name">
+					</div>
+					<div class="mc-field-group">
+						<label for="mce-LNAME"></label>
+						<input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="last name">
+					</div> 
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_897d9386663f48a53e9af6c33_5d6486c2d4" tabindex="-1" value=""></div>
+					    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+					    </div> 
+					</form>
+					</div>
+					<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+					<!--End mc_embed_signup-->
+			<!-- CODE FROM MAIL CHIMP -->
+
+			<p class="mailchimp__assurance">We assure you that you will receive no more than one email a week — <em>probably a good deal less</em>. Also, we would love any and all feedback on the project. Write: <br><br> deacon@sqglz.com</p>
+		</div><!-- MAIL CHIMP FORM BOX -->  
+	</div><!-- MAILCHIMP MODAL -->
+
+	<script type="text/javascript"> 
 		// MAIL CHIMP
 			var mailchimpTrigger = document.getElementById("mailchimp-trigger");
 			var mailChimpClose = document.getElementById("mailchimp-close");
@@ -174,6 +197,22 @@
 			mailChimpClose.addEventListener("click", function() {
 					mailChimpModal.classList.add("mailchimp__modal__hidden");
 			});
+
+		// MOBILE NAV
+			var mobileOpen = document.getElementById("mobile-nav-open");
+			var backdrop = document.getElementById("backdrop");
+			var dropdown = document.getElementById("dropdown")
+
+			mobileOpen.addEventListener("click", function() {
+					backdrop.classList.toggle("nav__hidden");
+					dropdown.classList.toggle("nav__hidden");
+			});
+
+			backdrop.addEventListener("click", function() {
+					backdrop.classList.add("nav__hidden");
+					dropdown.classList.add("nav__hidden");
+			}); 
+
 
 	</script>
 
